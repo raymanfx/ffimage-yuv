@@ -1,0 +1,19 @@
+[package]
+name = "ffimage_yuv"
+version = "0.3.0"
+authors = ["Christopher N. Hesse <raymanfx@gmail.com>"]
+edition = "2018"
+license = "MIT"
+readme = "README.md"
+repository= "https://github.com/raymanfx/ffimage-yuv"
+
+[dependencies]
+ffimage = { version = "^0.3", path = "../ffimage" }
+num-traits = "^0.2"
+
+[dev-dependencies]
+criterion = "^0.3"
+
+[[bench]]
+name = "bench_main"
+harness = false
